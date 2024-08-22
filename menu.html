@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sizzle & Spice: The Ultimate Non-Veg Experience</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body id="menu_body">
+    <section id="menuNavMain">
+        <nav class="nav-bar">
+            <span><img src="images/header logo.jpg" alt=""></span>
+            <div class="nav-attr">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="menu.html" class="active">Menu</a>
+                <a href="cart.html">My Cart</a>
+                <a href="#foot">Contact</a>
+                <a href="http://localhost//phpfiles//login.php">Login</a>
+
+                <!-- <a href="signupform.html">SignUp</a> -->
+            </div>
+        </nav>
+    </section>
+
+    <section id="menu_catelog">
+        <div class="menu_heading">
+            <h1>Discover Our Exquisite Menu</h1>
+            <p>
+                Explore our diverse range of mouth-watering dishes crafted with love
+                and care by our talented chefs. From sizzling appetizers to hearty
+                mains and delectable desserts, we have something to tantalize every
+                taste bud. Browse through our menu below and treat yourself to a
+                culinary journey like no other.
+            </p>
+        </div>
+    </section>
+
+    <section id="menu_section">
+        <div class="menumain">
+            <nav id="menuNavi">
+                <ul>
+                    <li><a href="#veg">VEG</a></li>
+                    <li><a href="#nonVeg">Non veg</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="menu_option">
+            <h1 id="nonVeg">Non - Veg</h1>
+        </div>
+        <div class="boxx">
+            <!-- Non-Veg Items -->
+            <div class="food-card" id="frstcard">
+                <img src="images/chicken biriyani.jpg" alt="Food 1" />
+                <div class="food-info">
+                    <h4>Chicken Biryani</h4>
+                    <p><del>$3</del>&nbsp; Price: $1.5</p>
+                    <label for="ChickenBiryani">Qty:</label>
+                    <input type="number" id="AQty" name="AQty" value="1" min="1" /><br>
+                    <button onclick="addToCart('ChickenBiryani', 1, document.getElementById('AQty').value, 'images/chicken biriyani.jpg')">
+                        Add to Cart
+                    </button>
+                    <button onclick="like('Chicken Biryani')" class="likebtn"><i class="fa-light fa-heart"></i>like</button>
+                </div>
+            </div>
+            <div class="food-card">
+                <img src="images/chicken burger.jpg" alt="Food 2" />
+                <div class="food-info">
+                    <h4>Chicken Burger</h4>
+                    <p><del>$2</del>&nbsp; Price: $1</p>
+                    <label for="ChickenBurger">Qty:</label>
+                    <input type="number" id="BQty" name="BQty" value="1" min="1" /><br>
+                    <button onclick="addToCart('ChickenBurger', 1, document.getElementById('BQty').value, 'images/chicken burger.jpg')">
+                        Add to Cart
+                    </button>
+                    <button onclick="like('Chicken Burger')" class="likebtn"><i class="fa-light fa-heart"></i>like</button>
+                </div>
+            </div>
+            <div class="food-card">
+                <img src="images/chicken fried rice.jpg" alt="Food 3" />
+                <div class="food-info">
+                    <h4>Chicken Fried Rice</h4>
+                    <p><del>$2</del>&nbsp; Price: $1</p>
+                    <label for="chickenFriedRice">Qty:</label>
+                    <input type="number" id="CQty" name="CQty" value="1" min="1" /><br>
+                    <button onclick="addToCart('ChickenFriedRice', 1, document.getElementById('CQty').value, 'images/chicken fried rice.jpg')">
+                        Add to Cart
+                    </button>
+                    <button onclick="like('Chicken Fried Rice')" class="likebtn"><i class="fa-light fa-heart"></i>like</button>
+                </div>
+            </div>
+            <div class="food-card">
+                <img src="images/chicken kabab.jpg" alt="Food 4" />
+                <div class="food-info">
+                    <h4>Chicken Kabab</h4>
+                    <p><del>$3</del>&nbsp; Price: $2</p>
+                    <label for="ChickenKabab">Qty:</label>
+                    <input type="number" id="DQty" name="DQty" value="1" min="1" /><br>
+                    <button onclick="addToCart('ChickenKabab', 2, document.getElementById('DQty').value, 'images/chicken kabab.jpg')">
+                        Add to Cart
+                    </button>
+                    <button onclick="like('Chicken Kabab')" class="likebtn"><i class="fa-light fa-heart"></i>like</button>
+                </div>
+            </div>
+            <div class="food-card">
+                <img src="images/chicken momos.jpg" alt="Food 5" />
+                <div class="food-info">
+                    <h4>Chicken Momos</h4>
+                    <p><del>$2</del>&nbsp; Price: $1</p>
+                    <label for="ChickenMomos">Qty:</label>
+                    <input type="number" id="EQty" name="EQty" value="1" min="1" /><br>
+                    <button onclick="addToCart('ChickenMomos', 1, document.getElementById('EQty').value, 'iimages/chicken momos.jpg')">
+                        Add to Cart
+                    </button>
+                    <button onclick="like('Chicken Momos')" class="likebtn"><i class="fa-light fa-heart"></i>like</button>
+                </div>
+            </div>
+            <div class="food-card">
+                <img src="images/chicken noodles.jpg" alt="Food 6" />
+                <div class="food-info">
+                    <h4>Chicken Noodles</h4>
+                    <p><del>$3</del>&nbsp; Price: $1</p>
+                    <label for="ChickenNoodles">Qty:</label>
+                    <input type="number" id="FQty" name="FQty" value="1" min="1" /><br>
+                    <button onclick="addToCart('ChickenNoodles', 1, document.getElementById('FQty').value, 'images/chicken noodles.jpg')">
+                        Add to Cart
+                    </button>
+                    <button onclick="like('chicken noodles')" class="likebtn"><i class="fa-light fa-heart"></i>like</button>
+                </div>
+            </div>
+            <div class="food-card">
+                <img src="images/chicken roll.jpg" alt="Food 7" />
+                <div class="food-info">
+                    <h4>Chicken Roll</h4>
+                    <p><del>$2</del>&nbsp; Price: $1</p>
+                    <label for="ChickenRoll">Qty:</label>
+                    <input type="number" id="GQty" name="GQty" value="1" min="1" /><br>
+                    <button onclick="addToCart('ChickenRoll', 1, document.getElementById('GQty').value, 'images/chicken roll.jpg')">
+                        Add to Cart
+                    </button>
+                    <button onclick="like('chicken roll')" class="likebtn"><i class="fa-light fa-heart"></i>like</button>
+                </div>
+            </div>
+            <div class="food-card">
+                <img src="images/grilled fish.jpg" alt="Food 8" />
+                <div class="food-info">
+                    <h4>Grilled Fish</h4>
+                    <p><del>$5</del>&nbsp; Price: $3</p>
+                    <label for="GrilledFish">Qty:</label>
+                    <input type="number" id="HQty" name="HQty" value="1" min="1" /><br>
+                    <button onclick="addToCart('GrilledFish', 3, document.getElementById('HQty').value, 'images/grilled fish.jpg')">
+                        Add to Cart
+                    </button>
+                    <button onclick="like('grilled fish')" class="likebtn"><i class="fa-light fa-heart"></i>like</button>
+                </div>
+            </div>
+            <div class="food-card">
+                <img src="images/meatPizza.jpg" alt="Food 9" />
+                <div class="food-info">
+                    <h4>Chicken pizza</h4>
+                    <p><del>$3</del>&nbsp; Price: $2</p>
+                    <label for="ChickenPizza">Qty:</label>
+                    <input type="number" id="IQty" name="IQty" value="1" min="1" /><br>
+                    <button onclick="addToCart('ChickenPizza', 2, document.getElementById('IQty').value, 'images/meatPizza.jpg')">
+                        Add to Cart
+                    </button>
+                    <button onclick="like('Chicken Pizza')" class="likebtn"><i class="fa-light fa-heart"></i>like</button>
+                </div>
+            </div>
+            <div class="food-card">
+                <img src="images/non veg thali.jpg" alt="Food 10" />
+                <div class="food-info">
+                    <h4>Non-Veg Thali</h4>
+                    <p><del>$3</del>&nbsp; Price: $2</p>
+                    <label for="Thali">Qty:</label>
+                    <input type="number" id="JQty" name="JQty" value="1" min="1" /><br>
+                    <button onclick="addToCart('Thali', 2, document.getElementById('JQty').value, 'image/non veg thali.jpg')">
+                        Add to Cart
+                    </button>
+                    <button onclick="like('non veg thali')" class="likebtn"><i class="fa-light fa-heart"></i>like</button>
+                </div>
+            </div>
+        </div>
+        <div class="menu_option">
+            <h1 id="veg">Veg</h1>
+        </div>
+        <div class="boxx">
+            <!-- Veg Items -->
+            <div class="food-card">
+                <img src="images/idli vada.jpg" alt="idli vada" />
+                <div class="food-info">
+                    <h4>Idli Vada</h4>
+                    <p><del>$3</del>&nbsp; Price: $2</p>
+                    <label for="IdliVadaQty">Qty:</label>
+                    <input type="number" id="IdliVadaQty" name="IdliVadaQty" value="1" min="1" /><br>
+                    <button onclick="addToCart('Idli Vada', 2, document.getElementById('IdliVadaQty').value, 'images/idli vada.jpg')">
+                        Add to Cart
+                    </button>
+                    <button onclick="like('Idli Vada')" class="likebtn"><i class="fa-light fa-heart"></i>like</button>
+                </div>
+            </div>
+            <div class="food-card">
+                <img src="images/lemon rice.jpg" alt="Food 12" />
+                <div class="food-info">
+                    <h4>Lemon Rice</h4>
+                    <p><del>$2</del>&nbsp; Price: $1</p>
+                    <label for="LemonRiceQty">Qty:</label>
+                    <input type="number" id="LemonRiceQty" name="LemonRiceQty" value="1" min="1" /><br>
+                    <button onclick="addToCart('Lemon Rice', 1, document.getElementById('LemonRiceQty').value, 'images/lemon rice.jpg')">
+                        Add to Cart
+                    </button>
+                    <button onclick="like('Lemon Rice')" class="likebtn"><i class="fa-light fa-heart"></i>like</button>
+                </div>
+            </div>
+            <div class="food-card">
+                <img src="images/Mix Veg Gravy.jpg" alt="Mix Veg Gravy" />
+                <div class="food-info">
+                    <h4>Mix Veg Gravy</h4>
+                    <p><del>$3</del>&nbsp; Price: $1.5</p>
+                    <label for="MixVegGravyQty">Qty:</label>
+                    <input type="number" id="MixVegGravyQty" name="MixVegGravyQty" value="1" min="1" /><br>
+                    <button onclick="addToCart('Mix Veg Gravy', 1.5, document.getElementById('MixVegGravyQty').value, 'images/Mix Veg Gravy.jpg')">
+                        Add to Cart
+                    </button>
+                    <button onclick="like('Mix Veg Gravy')" class="likebtn"><i class="fa-light fa-heart"></i>like</button>
+                </div>
+            </div>
+            <div class="food-card">
+                <img src="images/paneen kadai.jpg" alt="panner kadai" />
+                <div class="food-info">
+                    <h4>Paneer Kadai</h4>
+                    <p><del>$3</del>&nbsp; Price: $1.5</p>
+                    <label for="PaneerKadaiQty">Qty:</label>
+                    <input type="number" id="PaneerKadaiQty" name="PaneerKadaiQty" value="1" min="1" /><br>
+                    <button onclick="addToCart('Paneer Kadai', 1.5, document.getElementById('PaneerKadaiQty').value, 'images/paneen kadai.jpg')">
+                        Add to Cart
+                    </button>
+                    <button onclick="like('Paneer Kadai')" class="likebtn"><i class="fa-light fa-heart"></i>like</button>
+                </div>
+            </div>
+            <div class="food-card">
+                <img src="images/panner dumbiryani.jpg" alt="paneer dum biryani" />
+                <div class="food-info">
+                    <h4>Paneer Dum Biryani</h4>
+                    <p><del>$4</del>&nbsp; Price: $2</p>
+                    <label for="PaneerDumBiryaniQty">Qty:</label>
+                    <input type="number" id="PaneerDumBiryaniQty" name="PaneerDumBiryaniQty" value="1" min="1" /><br>
+                    <button onclick="addToCart('Paneer Dum Biryani', 2, document.getElementById('PaneerDumBiryaniQty').value, 'images/panner dumbiryani.jpg')">
+                        Add to Cart
+                    </button>
+                    <button onclick="like('Paneer Dum Biryani')" class="likebtn"><i class="fa-light fa-heart"></i>like</button>
+                </div>
+            </div>
+            <div class="food-card">
+                <img src="images/rice thali.jpg" alt="rice thali" />
+                <div class="food-info">
+                    <h4> Rice Thali</h4>
+                    <p><del>$2</del>&nbsp; Price: $1</p>
+                    <label for="RiceThaliQty">Qty:</label>
+                    <input type="number" id="RiceThaliQty" name="RiceThaliQty" value="1" min="1" /><br>
+                    <button onclick="addToCart('Rice Thali', 1, document.getElementById('RiceThaliQty').value, 'images/rice thali.jpg')">
+                        Add to Cart
+                    </button>
+                    <button onclick="like('Rice Thali')" class="likebtn"><i class="fa-light fa-heart"></i>like</button>
+                </div>
+            </div>
+            <div class="food-card">
+                <img src="images/soya fried rice.jpg" alt="Soya Fried Rice" />
+                <div class="food-info">
+                    <h4>Soya Fried Rice</h4>
+                    <p><del>$2</del>&nbsp; Price: $1</p>
+                    <label for="SoyaFriedRiceQty">Qty:</label>
+                    <input type="number" id="SoyaFriedRiceQty" name="SoyaFriedRiceQty" value="1" min="1" /><br>
+                    <button onclick="addToCart('Soya Fried Rice', 1, document.getElementById('SoyaFriedRiceQty').value, 'images/soya fried rice.jpg')">
+                        Add to Cart
+                    </button>
+                    <button onclick="like('Soya Fried Rice')" class="likebtn"><i class="fa-light fa-heart"></i>like</button>
+                </div>
+            </div>
+            <div class="food-card">
+                <img src="images/veg rolls.jpg" alt="Veg Roll" />
+                <div class="food-info">
+                    <h4>Veg Roll</h4>
+                    <p><del>$1</del>&nbsp; Price: $0.5</p>
+                    <label for="VegRollQty">Qty:</label>
+                    <input type="number" id="VegRollQty" name="VegRollQty" value="1" min="1" /><br>
+                    <button onclick="addToCart('Veg Roll', 0.5, document.getElementById('VegRollQty').value, 'images/veg rolls.jpg')">
+                        Add to Cart
+                    </button>
+                    <button onclick="like('Veg Roll')" class="likebtn"><i class="fa-light fa-heart"></i>like</button>
+                </div>
+            </div>
+            <div class="food-card">
+                <img src="images/veg soup.jpg" alt="Veg Soup" />
+                <div class="food-info">
+                    <h4>Veg Soup</h4>
+                    <p><del>$2</del>&nbsp; Price: $1</p>
+                    <label for="VegSoupQty">Qty:</label>
+                    <input type="number" id="VegSoupQty" name="VegSoupQty" value="1" min="1" /><br>
+                    <button onclick="addToCart('Veg Soup', 1, document.getElementById('VegSoupQty').value, 'images/veg soup.jpg')">
+                        Add to Cart
+                    </button>
+                    <button onclick="like('Veg Soup')" class="likebtn"><i class="fa-light fa-heart"></i>like</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="foot">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p>123 Main Street, City</p>
+                <p>Phone: +1 (123) 456-7890</p>
+                <p>Email: info@sizzleandspice.com</p>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul class="quick-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#foot">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Sizzle & Spice. All rights reserved.</p>
+        </div>
+    </footer>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
