@@ -1,5 +1,5 @@
 
-##Food Ordering Website
+Food Ordering Website
 
 ## Overview
 This Food Ordering Website is designed to streamline the ordering process for restaurants, making it an ideal solution for new startups. By utilizing this website, restaurants can reduce the number of waitstaff needed, allowing customers to order directly from their tables using a QR code.
